@@ -46,6 +46,14 @@ const Todo = () => {
         })
     }
 
+    const renameItem = (id, newText) => {
+        setTodolist((prevTodo) =>
+            prevTodo.map((item) =>
+                item.id === id ? { ...item, text: newText } : item
+            )
+        );
+    };
+
 useEffect(()=>{
     localStorage.setItem("todoList",JSON.stringify(todoList))
 },[todoList])
@@ -64,9 +72,17 @@ useEffect(()=>{
             </div>
 
             <div>
-                {todoList.map((item, index)=>{
-                return <Todoitems key={item.id} id={item.id} text={item.text} isComplete={item.isComplete} deleteItem={deleteItem} toggle={toggle}/>
-                })} 
+                {todoList.map((item) => (
+                    <Todoitems
+                        key={item.id}
+                        id={item.id}
+                        text={item.text}
+                        isComplete={item.isComplete}
+                        deleteItem={deleteItem}
+                        toggle={toggle}
+                        renameItem={renameItem} // Pass the function
+                    />
+                ))}
             </div>
         </div>
     );
