@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To-Do List with Weather - README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
-    pre {
-      background-color: #eee;
-      padding: 1rem;
-      overflow-x: auto;
-    }
-  </style>
-</head>
 <body>
 
   <h1>To-Do List with Weather</h1>
