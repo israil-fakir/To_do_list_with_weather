@@ -22,7 +22,7 @@ function WeatherWidget() {
     <div className="text-sm text-blue-600 mt-4" id="weather">
       {weather ? (
         <>
-          <p>📍Dhaka</p>
+          <p>📍 Dhaka</p>
           <p>🌡️ Temp: {weather.temp}°C</p>
           <p>🌤️ {weather.desc}</p>
           <p>💧 Humidity: {weather.humidity}%</p>

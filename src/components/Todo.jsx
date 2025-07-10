@@ -64,7 +64,7 @@ useEffect(()=>{
             <div className="flex items-center justify-between mb-2">
                 
                 <span className="text-gray-500 ">
-                    {new Date().toLocaleDateString('en-GB', {day: '2-digit',month: 'long',year:'numeric'})}
+                    {new Date().toLocaleDateString('en-GB', {weekday: 'short',day: '2-digit',month: 'long',year:'numeric'})}
                 </span> 
                 <div className='flex-1 flex justify-center items-center gap-2'>
                     <img className='w-12' src="src/assets/icon/to_do_test-50.png" alt="to do image" />
