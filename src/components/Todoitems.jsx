@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import checked from '../assets/icon/checked-checkbox-50.png';
 import unchecked from '../assets/icon/unchecked-checkbox-50.png';
 import renameIcon from '../assets/icon/rename.png';
+import deleteIcon from '../assets/icon/delete.png'
 
 const Todoitems = ({ text, id, isComplete, deleteItem, toggle, renameItem }) => {
     const [isEditing, setIsEditing] = useState(false);
@@ -45,7 +46,7 @@ const Todoitems = ({ text, id, isComplete, deleteItem, toggle, renameItem }) => 
             />
             <img
                 onClick={() => { deleteItem(id); }}
-                src="src/assets/icon/delete.png"
+                src={deleteIcon}
                 alt="Delete"
                 className='cursor-pointer w-9'
             />

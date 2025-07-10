@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Todoitems from './Todoitems';
 import WeatherWidget from './WeatherWidget'; 
 import { useRef } from 'react';
+import todoIcon from '../assets/icon/to_do_test-50.png'
 
 const Todo = () => {
 
@@ -67,7 +68,7 @@ useEffect(()=>{
                     {new Date().toLocaleDateString('en-GB', {weekday: 'short',day: '2-digit',month: 'long',year:'numeric'})}
                 </span> 
                 <div className='flex-1 flex justify-center items-center gap-2'>
-                    <img className='w-12' src="src/assets/icon/to_do_test-50.png" alt="to do image" />
+                    <img className='w-12' src={todoIcon} alt="to do image" />
                     <h1 className='text-3xl font-semibold'>To-do List</h1>
                 </div> 
                 <div className="flex-shrink-0 ml-2">
