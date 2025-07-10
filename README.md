@@ -3,7 +3,7 @@
 <body>
 
   <h1>To-Do List with Weather</h1>
-  <p>A simple React-based to-do list application that also displays real-time weather information for your city.</p>
+  <p>A simple React-based to-do list application that also displays real-time weather information for a city.</p>
 
   <h2>Features</h2>
   <ul>
