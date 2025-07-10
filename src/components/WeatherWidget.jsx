@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 function WeatherWidget() {
   const [weather, setWeather] = useState(null);
-  const city = 'Dhaka'; // You can make this dynamic later
-  const apiKey = '722c687809ac31415f06369058b07fa6'; // Replace with your actual key
+  const city = 'Dhaka';
+  const apiKey = '722c687809ac31415f06369058b07fa6'; 
 
   useEffect(() => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
