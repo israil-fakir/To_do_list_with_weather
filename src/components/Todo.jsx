@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Todoitems from './Todoitems';
+import WeatherWidget from './WeatherWidget'; // <-- Import the widget
 import { useRef } from 'react';
 
 const Todo = () => {
@@ -59,11 +60,22 @@ useEffect(()=>{
 },[todoList])
 
     return (
-        <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl'>
-
-            <div className='flex items-center ml-7 gap-2'>
-                <img className='w-10' src="src\assets\icon\to_do_test-50.png" alt="to do imgage" />
-                <h1 className='text-3xl font-semibold'>To-do List</h1>
+        <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-3 min-h-[650px] rounded-xl'>
+            {/* Header Row */}
+            <div className="flex items-center justify-between mb-2">
+                {/* Date on the left */}
+                <span className="text-gray-500 ">
+                    {new Date().toLocaleDateString('en-GB', {day: '2-digit',month: 'long',year:'numeric'})}
+                </span>
+                {/* Centered To-do List title */}
+                <div className='flex-1 flex justify-center items-center gap-2'>
+                    <img className='w-12' src="src/assets/icon/to_do_test-50.png" alt="to do image" />
+                    <h1 className='text-3xl font-semibold'>To-do List</h1>
+                </div>
+                {/* Weather widget on the right */}
+                <div className="flex-shrink-0 ml-2">
+                    <WeatherWidget />
+                </div>
             </div>
 
             <div className='flex items-center my-7 bg-gray-200 rounded-full'>
