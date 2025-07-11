@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: '/To_do_list_with_weather/',
+  // base: '/To_do_list_with_weather/',
 })
